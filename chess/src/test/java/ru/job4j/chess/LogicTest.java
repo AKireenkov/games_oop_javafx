@@ -17,8 +17,8 @@ public class LogicTest {
 
     @Test(expected = FigureNotFoundException.class)
     public void when00WayC3ThenError() throws OccupiedCellException, FigureNotFoundException {
-        Logic Logic = new Logic();
-        Logic.move(findBy(0, 0), C1);
+        Logic logic = new Logic();
+        logic.move(findBy(0, 0), C1);
     }
 
     @Test(expected = OccupiedCellException.class)
